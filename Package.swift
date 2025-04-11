@@ -6,12 +6,12 @@ let package = Package(
     platforms: [
         .iOS(.v15)
     ],
-    dependencies: [
-       .package(url: "https://github.com/atanasovdejan/pop.git", branch: "master")
-    ],
     products: [
         .library(name: "FluidSlider",
             targets: ["FluidSlider"]),
+    ],
+    dependencies: [
+       .package(url: "https://github.com/atanasovdejan/pop.git", branch: "master")
     ],
     targets: [
         .target(name: "FluidSlider",
