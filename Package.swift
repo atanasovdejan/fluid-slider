@@ -29,7 +29,10 @@ import PackageDescription
 let package = Package(
     name: "FluidSlider",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v15)
+    ],
+    dependencies: [
+        .package(url: "https://github.com/facebook/pop.git", from: "1.0.12")
     ],
     products: [
         .library(name: "FluidSlider",
