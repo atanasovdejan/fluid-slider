@@ -18,5 +18,4 @@ let package = Package(
         .target(name: "FluidSlider",
             path: "Sources")
     ],
-    swiftLanguageVersions: [.v5]
 )
