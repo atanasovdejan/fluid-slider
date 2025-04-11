@@ -20,8 +20,12 @@ private func isAnimationAllowed() -> Bool {
         isUnderHighload = false
     }
     
-    let isSimulator = TARGET_OS_SIMULATOR != 0
-    
+    var isSimulator = false
+#if targetEnvironment(simulator)
+    isSimulator = true
+#else
+    isSimulator = false
+#endif
     return !isSimulator && !ProcessInfo.processInfo.isLowPowerModeEnabled && !UIAccessibility.isReduceMotionEnabled && !isUnderHighload
 }
 
