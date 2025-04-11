@@ -1,7 +1,6 @@
 // swift-tools-version:5.8
 import PackageDescription
 
-
 let package = Package(
     name: "FluidSlider",
     platforms: [
@@ -17,5 +16,5 @@ let package = Package(
     targets: [
         .target(name: "FluidSlider",
             path: "Sources")
-    ],
+    ]
 )
